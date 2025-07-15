@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+    <main>
+        <section class="rules">
+        <h2>Regras do Jogo</h2>
+        <ul>
+            <li>O jogo é jogado em uma grade de 3x3.</li>
+            <li>Os jogadores escolhem seus símbolos: X ou O.</li>
+            <li>Os jogadores se revezam para colocar seus símbolos em espaços vazios.</li>
+            <li>O primeiro jogador a alinhar três símbolos em linha, coluna ou diagonal vence.</li>
+            <li>Se todos os espaços forem preenchidos sem um vencedor, o jogo termina em empate.</li>
+        </ul>
+        </section>
+        <div class="container">
+            <div class="grid">
+                <div class="cell" id="cell-0"></div>
+                <div class="cell" id="cell-1"></div>
+                <div class="cell" id="cell-2"></div>
+                <div class="cell" id="cell-3"></div>
+                <div class="cell" id="cell-4"></div>
+                <div class="cell" id="cell-5"></div>
+                <div class="cell" id="cell-6"></div>
+                <div class="cell" id="cell-7"></div>
+                <div class="cell" id="cell-8"></div>
+            </div>
+            <button onclick="restartGame()">Reiniciar</button>
+        </div>
+        <div id="popup" class="popup hidden">
+        <div class="popup-content">
+        <h2 id="popup-message"></h2>
+        <button onclick="closePopup()">Fechar</button>
+    </div>
+</div>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 João Ricci. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
